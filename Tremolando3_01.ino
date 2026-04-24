@@ -167,15 +167,10 @@ void setup() {
   //outLevel = float(EEPROM.read(1));
   InLevel = 0.3;
   outLevel = 0.9;
-  CORE_PIN9_CONFIG = PORT_PCR_MUX(1); // disable the clock to stop the I2S
-// ...configure the codec...
   ak4558.enable();
   ak4558.enableIn();
   ak4558.enableOut();
   ak4558.volume(0.98);
-  //Remember bug in volume() function. Multiply float by 255 instead of bitshift..
-  //also bug in hardcoding PDN PIN.
-  CORE_PIN9_CONFIG = PORT_PCR_MUX(6); // turn the I2S clock back on
   /*
   sgtl5000_1.enable();  // Enable the audio shield
   sgtl5000_1.inputSelect(myInput);
