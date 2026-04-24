@@ -145,11 +145,6 @@ long new1, new2, new3, new4;
 int SW_ENA_READ, SW_ENB_READ, SW_ENC_READ, SW_END_READ;
 int encoderType = 0;
 
-uint32_t off =pixels.Color(0,0,0);
-uint32_t blue =pixels.Color(0,0,50);
-uint32_t red =pixels.Color(50,0,0);
-uint32_t green =pixels.Color(0,30,0);
-uint32_t yellow =pixels.Color(50,50,0);
 
 const int myInput = AUDIO_INPUT_LINEIN;
 
