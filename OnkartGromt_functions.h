@@ -48,9 +48,6 @@ uint32_t green =pixels.Color(0,40,0);
 uint32_t yellow =pixels.Color(40,40,0);
 uint32_t white =pixels.Color(20,20,20);
 
-#if (SSD1306_LCDHEIGHT != 64)
-#error("Height incorrect, please fix Adafruit_SSD1306.h!");
-#endif
 
 Encoder knob1(30, 29);
 Encoder knob2(28, 27);
