@@ -17,7 +17,7 @@ All in all use the OpenEffectsProject OEP2.2 from OnkartGromt. AK4558 codec
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 #include <Metro.h> 
-#include <spieeprom.h>
+#include "spieeprom.h"
 #include "OnkartGromt_functions.h"
 
 // GUItool: begin automatically generated code
