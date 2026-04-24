@@ -212,7 +212,8 @@ void setup() {
   sgtl5000_1.autoVolumeDisable();*/
  // Serial.begin(115200);
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3C (for the 128x64)
-  display.setContrast(255);
+  display.ssd1306_command(SSD1306_SETCONTRAST);
+  display.ssd1306_command(255);
   display.clearDisplay();
   pixels.setPixelColor(0,yellow);
   pixels.show();
