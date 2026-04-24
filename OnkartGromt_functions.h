@@ -25,8 +25,8 @@ int Tap2 = 3;		//Rigth; switch- preset etc
 
 int SW1 = A12;		//Left toggle switch
 int SW2 = A13;		//Rigth toggle switch
-int SWA = A22;		//Encoder Switch A
-int SWB = A21;		//Encoder Switch B
+int SWA = A16;		//Encoder Switch A (A22 not available on Teensy 4.1)
+int SWB = A17;		//Encoder Switch B (A21 not available on Teensy 4.1)
 int SWC = 39;		//Encoder Switch C	
 int SWD = 38;		//Encoder Switch D
 
